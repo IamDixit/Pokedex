@@ -42,15 +42,7 @@ $TILE-WIDTH: 250px;
     display: flex;
     width: 100%;
     margin-top: 12px;
-    .left-side {
-      width: 100%;
-      justify-content: flex-start;
-      display: flex;
-    }
-    .right-side {
-      width: 100%;
-      display: flex;
-    }
+    justify-content: space-around;
     .action-box {
       padding: 4px 10px;
       margin: 8px;

@@ -152,33 +152,22 @@ class Tile extends PureComponent<TileProp, TileState> {
           </div>
         </div>
         <div className="footer">
-          <div className="left-side">
-            <div className="action-box">
-              <img
-                src={require("../../assests/star.png")}
-                alt="star"
-                className="action-icon"
-              />
-            </div>
+          <div
+            className="action-box"
+            onClick={this.toggleModel.bind(this, false)}
+          >
+            <img
+              src={require("../../assests/edit.png")}
+              alt="edit"
+              className="action-icon"
+            />
           </div>
-          <div className="right-side">
-            <div
-              className="action-box"
-              onClick={this.toggleModel.bind(this, false)}
-            >
-              <img
-                src={require("../../assests/edit.png")}
-                alt="edit"
-                className="action-icon"
-              />
-            </div>
-            <div className="action-box" onClick={this.deleteData}>
-              <img
-                src={require("../../assests/delete.png")}
-                alt="delete"
-                className="action-icon"
-              />
-            </div>
+          <div className="action-box" onClick={this.deleteData}>
+            <img
+              src={require("../../assests/delete.png")}
+              alt="delete"
+              className="action-icon"
+            />
           </div>
         </div>
         {this.state.model ? (
