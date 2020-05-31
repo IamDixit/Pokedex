@@ -1,0 +1,57 @@
+@import "../../global.scss";
+$padding: 8px;
+
+.pokedex-header {
+    padding: $padding;
+    height: 60px;
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    width: 100%;
+    .page-title {
+        width: 50%;
+        display: grid;
+        .title {
+            span {
+                font-size: 22px;
+                font-weight: bold;
+                color: $primary-900;
+            }
+        }
+        .sub-title {
+            span {
+                font-size: 14px;
+                color: $primary-300;
+            }
+        }
+    }
+    .search-bar {
+        width: 50%;
+        .search {
+            float: right;
+            display: flex;
+            margin: 12px;
+        }
+        .searchTerm {
+            min-width: 200px;
+            max-width: 200px;
+            border: 3px solid $btn-teal;
+            border-right: none;
+            padding: 5px;
+            height: 20px;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            color: #9dbfaf;
+        }
+        .searchButton {
+            width: 40px;
+            height: 36px;
+            border: 1px solid $btn-teal;
+            background: $btn-teal;
+            text-align: center;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.error {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    width: 300px;
+    padding: 12px;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            margin: 0px;
+        }
+    }
+}

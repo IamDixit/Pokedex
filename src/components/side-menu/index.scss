@@ -1,0 +1,23 @@
+@import "../../global.scss";
+$padding: 8px;
+
+.pokedex-side-menu {
+    padding: $padding;
+    height: 100vh;
+    border-right: 1px solid $border-color;
+    .logo {
+        max-width: 150px;
+        margin: auto;
+    }
+    .create-btn {
+        margin: 22px 20px;
+        padding: 12px;
+        color: #fff;
+        background: $btn-teal;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

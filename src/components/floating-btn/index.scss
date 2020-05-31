@@ -1,0 +1,16 @@
+@import "../../global.scss";
+$dimension: 40px;
+
+.floating-btn {
+    height: $dimension;
+    width: $dimension;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: $btn-teal;
+    border-radius: $dimension/2;
+    img {
+        width: $dimension;
+        height: $dimension;
+    }
+}

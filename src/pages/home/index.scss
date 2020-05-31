@@ -1,0 +1,11 @@
+.home {
+    display: flex;
+    width: 100%;
+    .side-menu {
+        min-width: 200px;
+        max-width: 200px;
+    }
+    .header {
+        width: 100%;
+    }
+}
