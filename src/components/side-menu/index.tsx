@@ -27,6 +27,10 @@ class SideMenu extends PureComponent<SideMenuProp, SideMenuState> {
       imageUrl: "",
       type: "normal",
     };
+    this.props.pokemonAction({
+      type: "loadData",
+      payload: this.state,
+    });
   }
   toggleModel = () => {
     this.setState({

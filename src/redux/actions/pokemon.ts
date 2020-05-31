@@ -2,6 +2,7 @@ import { Dispatch } from "redux";
 import { State, Pokemon } from "../reducer/store";
 
 type Actions =
+  | "loadData"
   | "getPokemonDetails"
   | "insertPokemon"
   | "updatePokemon"

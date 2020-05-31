@@ -1,3 +1,4 @@
+import { getData } from "./localstore";
 import initialState, { State } from "./store";
 import { IPokemonAction } from "../actions/pokemon";
 
@@ -8,6 +9,11 @@ const AppReducer = (
   actionParams: ActionParams
 ) => {
   switch (actionParams.type) {
+    case "loadData":
+      return {
+        ...state,
+        pokemons: getData(),
+      };
     case "insertPokemon":
       return {
         ...state,
@@ -33,5 +39,4 @@ const AppReducer = (
       return state;
   }
 };
-
 export default AppReducer;

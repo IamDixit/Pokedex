@@ -229,7 +229,11 @@ class Tile extends PureComponent<TileProp, TileState> {
               </div>
               <div className="row">
                 <span>Type</span>
-                <select value={this.state.type} onChange={this.handleType}>
+                <select
+                  value={this.state.type}
+                  onChange={this.handleType}
+                  disabled={this.state.disabled}
+                >
                   {typesArr.map(
                     (
                       item: { name: string; value: PokemonTypes },
